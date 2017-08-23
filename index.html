@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <style type="text/css">
+    #container {
+      width: 300px;
+      padding: 5px;
+      border: 1px dashed black;
+      overflow-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <p>
+      Links overflow the container when using only alpha + underscore:
+    </p>
+
+    <ul>
+      <li>
+        <a href="#">Lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit.</a>
+      </li>
+    </ul>
+
+    <p>
+      They wrap if they use dashes instead:
+    </p>
+
+    <ul>
+      <li>
+        <a href="#">Lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit.</a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
